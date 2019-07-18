@@ -3,13 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>The Beatles Ultimate Trivia Quiz</title>
-        <meta name="description" content="Test your knowledge of obscure Fab Four trivia">
-        <link href="index.css" rel="stylesheet" type="text/css" />
-        <!-- add font family link here -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="datastore.js"></script>
-        <script src="index.js"></script>
+        <title>Beatles Quiz Results Wireframe</title>
+        <meta name="description" content="Wireframe of the results page">
+        <link href="results.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <header role="banner">
@@ -27,11 +23,15 @@
             </div>
         </header>
         <main role="main">
-            <div class="quizStarter">
-                <h1>The Ultimate Beatles Fan Quiz</h1>
-                <button type="button" class="startButton">All Together Now!</button>
+            <div class="resultsMessage">
+                <h2>Congratulations!</h2>
+                <div class="imagePlaceholder">
+                    <p>There's gonna be fun image or icon here eventually</p>
+                </div>
+                <h3>You got X/10</h3>
+                <p>This will be a tailored message based on how many questions the user got right</p>
             </div>
-            <div class="questionsGoHere"></div>
+            <button class="restartQuiz">Restart Quiz</button>
         </main>
     </body>
 </html>

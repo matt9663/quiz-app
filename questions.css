@@ -59,31 +59,38 @@ header {
 
 }
 
-/* main body styling */
-
+/* main styling */
 main {
-    padding-top: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
-
-.quizStarter {
-    display: block;
-    text-align: center;
-    width: 100%;   
-}
-h1 {
-    text-align: center;
-    font-size: 70px;
-    margin: 0px 10px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+.question {
+    font-size: 30px;
     border: 1px solid black;
-    background-color: lightgray;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: lightgrey;
 }
-.startButton {
-    padding: 20px;
-    border: solid 1px black;
-    color: black;
-    border-radius: 3px;
-    font-size: 20px;
-    margin-top: 50px;
+.question h2 {
+    padding: 5px;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+}
+.answerOption {
+    border: 1px solid black;
+    background-color: lightgrey;
+    padding: 10px 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+.submitAnswer {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 25px;
 }
