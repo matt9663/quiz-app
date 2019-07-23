@@ -49,7 +49,7 @@ function generateQuestion() {
 }
 else {
   renderResults();
-  $(`.score`).hide();
+  $(`header`).hide();
 }} 
 
 function validateAnswer() {

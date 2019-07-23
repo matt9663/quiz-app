@@ -48,7 +48,7 @@ const questionsData = [
     answer: `Drake`
     },
     {
-    question: `Fed up by the grueling schedule and having their music drowned out by screaming fans, the Beatles decided to quit touring midway through their career. The band played their last concert for a paying audience on August 29th, 1966 at Candlestick Park in which US city?`,
+    question: `Fed up by the grueling schedule and the lack of focus on their music itself, the Beatles decided to quit touring midway through their career. The band played their last concert for a paying audience on August 29th, 1966 at Candlestick Park in which US city?`,
     a: `New York`,
     b: `Dallas`,
     c: `Chicago`,
@@ -56,7 +56,7 @@ const questionsData = [
     answer: `San Francisco`
     },
     {
-    question: `Sgt. Pepper’s Lonely Hearts Club Band was notable for being one of the first major rock records to include what in the linear notes of the album?`,
+    question: `Sgt. Pepper’s Lonely Hearts Club Band was notable for being one of the first major rock records to include what in the liner notes of the album?`,
     a: `Studio musician credits`,
     b: `Artist commentary on the songs`,
     c: `List of equipment used during the recording process`,
