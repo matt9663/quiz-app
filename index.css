@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Lora', serif;
+    
+    background-image: url('https://user-images.githubusercontent.com/51541006/61474002-33657400-a977-11e9-8ad3-3e9ef2501864.jpg');
+    background-size: cover;
+}
 
 /* header styling */
 
@@ -16,20 +22,15 @@ header {
     flex-direction: row;
     height: 175px;
 }
-.home, .score {
-    padding-left: 1.05%;
-    padding-right: 1.05%;
-}
+
 
 .home {
     display: flex;
     width: 40%;
-    border: 1px solid black;
-    background-color: lightgray;
     margin: 0px 5px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    align-items: center; 
+    justify-content: left;
+    padding-left: 5%;
 }
 .logo {
     height: 150px;
@@ -42,9 +43,11 @@ header {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    border: 1px solid black;
-    background-color: lightgray;
     margin: 0px 5px;
+    padding-right: 5%;
+    font-family: 'Poppins', sans-serif;
+    color: lightyellow;
+    text-shadow: 2px 2px black;
 }
 
 .score ul {
@@ -59,11 +62,14 @@ header {
 
 }
 
-/* main body styling */
-
 main {
-    padding-top: 150px;
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    
 }
+
+/* Start page styling */
 
 .quizStarter {
     display: block;
@@ -74,16 +80,175 @@ h1 {
     text-align: center;
     font-size: 70px;
     margin: 0px 10px;
-    padding-top: 40px;
+    padding-top: 125px;
     padding-bottom: 40px;
-    border: 1px solid black;
-    background-color: lightgray;
+    color: lightyellow;
+    text-shadow: 2px 2px black;
+    text-transform: uppercase;
 }
 .startButton {
-    padding: 20px;
+    text-transform: uppercase;
+    padding: 40px;
     border: solid 1px black;
-    color: black;
     border-radius: 3px;
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 50px;
+    color: darkslategray;
+    background-color: #fdcc0e;
+    
+}
+
+/* question page styling */
+
+.question {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: lightyellow;
+    text-shadow: 2px 2px black;
+}
+.question h2 {
+    padding: 5px;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+}
+.answerOption {
+    border: 1px solid black;
+    padding: 10px 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: lightyellow;
+    text-shadow: 1px 1px black;
+    border-radius: 2px;
+}
+.answerOption span {
+    margin-left: 20px;
+}
+.submitAnswer {
+    margin-top: 5px;
+    padding: 10px;
+    padding-left:  35px;
+    width: 100%;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: darkslategray;
+    background-color: #fdcc0e;
+    text-shadow: 1px 1px black;
+    border-radius: 2px;
+    border: solid 1px black;
+}
+#answerA {
+    background-color: #8cc63f;
+}
+#answerB {
+    background-color: #ff338d;
+}
+#answerC {
+    background-color: #00caf7;
+}
+#answerD {
+    background-color: #ff3e30;
+}
+
+
+/* feedback page styling */
+
+.feedbackMessage {
+    
+    background: rgba(220, 220, 220, 0.9);
+    /* opacity: 0.9;*/
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+
+.feedbackIcon {
+    margin: 10px 0;
+    height: 350px;
+    display: block;
+    margin: auto;
+    
+}
+
+.feedbackMessage h3 {
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.feedbackMessage p {
+    padding: 10px 0;
+    font-size: 25px;
+}
+.nextQuestionButton {
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: darkslategray;
+    background-color: #fdcc0e;
+    text-shadow: 1px 1px black;
+    border-radius: 2px;
+    border: solid 1px black;
+}
+.correctFeedbackAnswer {
+    color:  red;
+    text-transform: uppercase;
+}
+/* results page styling */
+
+.resultsMessage {
+    border: 1px solid black;
+    background-color: lightgrey;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.resultsMessage h2 {
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+.imagePlaceholder {
+    border: 1px black solid;
+    padding: 80px 0;
+    margin: 10px 0;
+}
+.resultsMessage h3 {
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.resultsMessage p {
+    padding: 20px 0;
+    font-size: 25px;
+}
+
+.resultsImage {
+    height: 390px;
+}
+.restartQuiz {
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: darkslategray;
+    background-color: #fdcc0e;
+    text-shadow: 1px 1px black;
+    border-radius: 2px;
+    border: solid 1px black;
 }
